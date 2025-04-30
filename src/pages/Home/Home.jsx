@@ -1,11 +1,16 @@
-import { FirstParallax } from "../../components/atoms/FirstParallax/FirstParallax"
+import { Parallax } from "../../components/atoms/Parallax/Parallax"
 import { Navbar } from "../../components/atoms/Navbar/Navbar"
+import { Cards } from "../../components/molecules/Cards/Cards"
+import FirstParallaxImage from "../../assets/firstParallax/FirstParallax.jpg"
+import { Categories } from "../../components/organisms/Categories/Categories"
 
 export const Home = () => {
     return (
-        <>
+        <div className="bg-white m-0 p-0 overflow-hidden">
             <Navbar />
-            <FirstParallax />
-        </>
+            <Parallax image={FirstParallaxImage} description={'TRANSFORM YOUR INTERIOR WITH URBANEX SPACE'} />
+            <Cards />
+            <Categories />
+        </div>
     )
 }
