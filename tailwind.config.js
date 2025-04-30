@@ -5,7 +5,11 @@ export default {
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'navbar': ['Lusitana', 'Georgia', 'serif']
+        }
+      },
     },
     plugins: [],
   }
