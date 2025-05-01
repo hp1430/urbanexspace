@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export const Contact = () => {
 
     function handleClick() {
@@ -9,8 +12,20 @@ export const Contact = () => {
         window.open(url, "_blank");
     }
 
+    const location = useLocation();
+
+    useEffect(() => {
+        if(location.hash === '#contact') {
+            const id = location.hash.substring(1); // Remove the '#' from the hash
+            const element = document.getElementById(id);
+            if(element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location])
+
     return (
-        <div>
+        <div id="contact">
             <h1
                 className="text-5xl font-semibold text-center mt-10 mb-10 text-gray-800"
             >

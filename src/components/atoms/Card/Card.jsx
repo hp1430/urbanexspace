@@ -1,4 +1,4 @@
-export const Card = ({image, title}) => {
+export const Card = ({image, title, description}) => {
     return (
         <div>
             <div>
@@ -10,6 +10,11 @@ export const Card = ({image, title}) => {
             </div>
             <div className="text-center mt-4">
                 <h2 className="text-2xl font-semibold mt-4">{title}</h2>
+                <p
+                    className="text-lg font-thin text-gray-600 mb-5 max-w-lg text-center mt-2"
+                >
+                    {description}
+                </p>
             </div>
         </div>
     )

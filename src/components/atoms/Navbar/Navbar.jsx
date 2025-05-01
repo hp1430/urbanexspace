@@ -9,7 +9,7 @@ export const Navbar = () => {
             <div className="justify-between items-center w-full max-w-6xl flex text-black text-lg font-navbar font-light">
                 {/* Left side */}
                 <div className="flex justify-start items-center">
-                    <Link className="ml-8 hover:text-gray-700">Home</Link>
+                    <Link className="ml-8 hover:text-gray-700" to='/home'>Home</Link>
                     <Link className="ml-8 hover:text-gray-700">Our Projects</Link>
                 </div>
 
@@ -18,8 +18,13 @@ export const Navbar = () => {
                 </div>
 
                 <div className="flex justify-end items-center">
-                    <Link className=" hover:text-gray-700">About Us</Link>
-                    <Link className="ml-8 mr-8 hover:text-gray-700">Contact Us</Link>
+                    <Link className=" hover:text-gray-700" to='/home/#aboutUs'>About Us</Link>
+                    <Link 
+                        className="ml-8 mr-8 hover:text-gray-700"
+                        to='/home#contact'
+                    >
+                            Contact Us
+                    </Link>
                 </div>
             </div>
         </div>

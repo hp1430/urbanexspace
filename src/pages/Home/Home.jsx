@@ -4,6 +4,7 @@ import { Cards } from "../../components/molecules/Cards/Cards"
 import FirstParallaxImage from "../../assets/firstParallax/FirstParallax.jpg"
 import { Categories } from "../../components/organisms/Categories/Categories"
 import { Contact } from "../../components/organisms/Contact/Contact"
+import { AboutUs } from "../../components/molecules/AboutUs/AboutUs"
 
 export const Home = () => {
     return (
@@ -12,6 +13,7 @@ export const Home = () => {
             <Parallax image={FirstParallaxImage} description={'TRANSFORM YOUR INTERIOR WITH URBANEX SPACE'} />
             <Cards />
             <Categories />
+            <AboutUs />
             <Contact />
         </div>
     )
