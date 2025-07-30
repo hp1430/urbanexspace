@@ -35,7 +35,7 @@ export const Cards = () => {
             <p
                 className="text-xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
-                With over 10 years of experience, Urbanex Space is dedicated to turning your home design ideas into reality. We believe in delivering quality craftsmanship to make your future home dreams come true.
+                At Urbanex Space, we believe that great design should not only be beautiful, but deeply personal, which is why we focus on crafting interiors that feel like an extension of your identity.
             </p>
         </div>
     )
