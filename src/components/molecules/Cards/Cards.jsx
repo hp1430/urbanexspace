@@ -1,7 +1,7 @@
 import { Card } from "../../atoms/Card/Card"
 import Residential from "../../../assets/cards/residential.jpg"
-import Retail from "../../../assets/cards/retail.jpg"
-import Hospitality from "../../../assets/cards/hospitality.jpg"
+import Office from "../../../assets/cards/office.png"
+import Hospitality from "../../../assets/cards/hospitality.png"
 
 export const Cards = () => {
     return (
@@ -21,8 +21,8 @@ export const Cards = () => {
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
                     <Card 
-                    image={Retail} 
-                    title="Retail"
+                    image={Office} 
+                    title="Office"
                     />
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
