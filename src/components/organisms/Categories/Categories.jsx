@@ -1,6 +1,6 @@
 import { Parallax } from "../../atoms/Parallax/Parallax"
 import Office from "../../../assets/categories/OfficeCover.png"
-import Residential from "../../../assets/categories/Residential.jpg"
+import Residential from "../../../assets/categories/ResidentialCover.png"
 import Villa from "../../../assets/categories/Villa.jpg"
 
 
@@ -22,12 +22,14 @@ export const Categories = () => {
                     We believe a well-designed office is a catalyst for productivity and inspiration. Our approach to office interiors combines brand identity with employee experience using layout, lighting, color psychology, and material choices to create dynamic environments. From sleek corporate setups to creative studios, our designs support modern workflows while exuding professionalism and innovation.
                 </span>
             </p>
-            <Parallax image={Residential} description={'Residential Projects'} />
+            <Parallax image={Residential} description={'Residential Designs'} />
             <p
                 className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
                 <span className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto">
-                    With over 10 years of experience, Urbanex Space is dedicated to turning your home design ideas into reality. We believe in delivering quality craftsmanship to make your future home dreams come true.
+                    <h2><strong>Designed for Modern Living, Styled for Timeless Grace.</strong></h2>
+                    Our Residential Designs are tailored to urban lifestyles that demand both style and substance. Each project is a study in balance blending bold design statements with serene palettes, smart space planning with luxurious comfort. We focus on making every corner count, from multi-functional layouts to mood-enhancing lighting and curated finishes.
+
                 </span>
             </p>
             <Parallax image={Villa} description={'Villa Projects'} />
