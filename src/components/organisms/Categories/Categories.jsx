@@ -37,7 +37,8 @@ export const Categories = () => {
                 className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
                 <span className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto">
-                    With over 10 years of experience, Urbanex Space is dedicated to turning your home design ideas into reality. We believe in delivering quality craftsmanship to make your future home dreams come true.
+                    <h2><strong>Immersive Luxury Designed to Leave a Lasting Impression.</strong></h2>
+                    Our hospitality interiors blend elegance, warmth, and cultural nuance to create unforgettable guest experiences. Whether designing boutique hotels or expansive resorts, we focus on spatial storytelling where every lobby, room, and lounge evokes comfort, opulence, and distinct identity. Rich materials, ambient lighting, and regionally inspired accents come together to build immersive environments that delight guests and elevate your brand’s hospitality offering.
                 </span>
             </p>
         </div>
