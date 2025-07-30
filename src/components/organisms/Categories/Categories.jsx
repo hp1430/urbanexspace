@@ -18,7 +18,8 @@ export const Categories = () => {
                 className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
                 <span className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto">
-                    With over 10 years of experience, Urbanex Space is dedicated to turning your home design ideas into reality. We believe in delivering quality craftsmanship to make your future home dreams come true.
+                    <h2><strong>Smart & Stylish Workspaces That Energize Performance.</strong></h2>
+                    We believe a well-designed office is a catalyst for productivity and inspiration. Our approach to office interiors combines brand identity with employee experience using layout, lighting, color psychology, and material choices to create dynamic environments. From sleek corporate setups to creative studios, our designs support modern workflows while exuding professionalism and innovation.
                 </span>
             </p>
             <Parallax image={Residential} description={'Residential Projects'} />
