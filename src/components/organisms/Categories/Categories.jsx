@@ -1,7 +1,7 @@
 import { Parallax } from "../../atoms/Parallax/Parallax"
 import Office from "../../../assets/categories/OfficeCover.png"
 import Residential from "../../../assets/categories/ResidentialCover.png"
-import Villa from "../../../assets/categories/Villa.jpg"
+import Hospitality from "../../../assets/categories/HospitalityCover.png"
 
 
 export const Categories = () => {
@@ -32,7 +32,7 @@ export const Categories = () => {
 
                 </span>
             </p>
-            <Parallax image={Villa} description={'Villa Projects'} />
+            <Parallax image={Hospitality} description={'Hospitality Designs'} />
             <p
                 className="text-2xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
