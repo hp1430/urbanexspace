@@ -1,7 +1,7 @@
 import { Parallax } from "../../components/atoms/Parallax/Parallax"
 import { Navbar } from "../../components/atoms/Navbar/Navbar"
 import { Cards } from "../../components/molecules/Cards/Cards"
-import FirstParallaxImage from "../../assets/firstParallax/FirstParallax.jpg"
+import FirstParallaxImage from "../../assets/firstParallax/FirstParallax.png"
 import { Categories } from "../../components/organisms/Categories/Categories"
 import { Contact } from "../../components/organisms/Contact/Contact"
 import { AboutUs } from "../../components/molecules/AboutUs/AboutUs"
