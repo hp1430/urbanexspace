@@ -1,5 +1,5 @@
 import { Card } from "../../atoms/Card/Card"
-import Residential from "../../../assets/cards/residential.jpg"
+import Residential from "../../../assets/cards/residential.png"
 import Office from "../../../assets/cards/office.png"
 import Hospitality from "../../../assets/cards/hospitality.png"
 
@@ -9,7 +9,7 @@ export const Cards = () => {
             <p
                 className="text-4xl font-thin text-center text-black mt-20 mb-10 max-w-4xl mx-auto"
             >
-                Good design yearns for boundless style that is underlined by simplicity
+                We shape spaces that echo with quiet elegance and bold character
             </p>
 
             <div className="flex items-start justify-center gap-10 overflow-x-auto px-4">
