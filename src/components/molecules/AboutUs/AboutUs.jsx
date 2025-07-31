@@ -1,7 +1,7 @@
 import { Card } from "../../atoms/Card/Card"
 import ourVision from "../../../assets/aboutUs/ourVision.webp"
 import ourMission from "../../../assets/aboutUs/ourConstruction.webp"
-import ourValues from "../../../assets/aboutUs/ourValues.webp"
+import ourValues from "../../../assets/aboutUs/ourValue.png"
 import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
 
@@ -46,7 +46,7 @@ export const AboutUs = () => {
                     <Card
                     image={ourValues}
                     title="Our Values"
-                    description="At Urbanex Space, we believe in providing our customers with the best possible service experience. Our values include integrity, quality, creativity, and innovation, which guide us in everything we do. Contact us to discuss your project!"
+                    description="We value design with integrity blending craftsmanship, collaboration, and conscious choices. Every detail matters, and every space we create is a reflection of our commitment to excellence."
                     />
                 </div>
             </div>
