@@ -15,7 +15,7 @@ export const Navbar = () => {
                 {/* Navigation Links aligned right */}
                 <div className="flex ml-10 space-x-8 justify-end flex-grow items-center">
                     <Link to="/home" className="hover:text-gray-700">Home</Link>
-                    <Link to="/portfolio" className="hover:text-gray-700">Portfolio</Link>
+                    <Link to="/home#portfolio" className="hover:text-gray-700">Portfolio</Link>
                     <Link to="/home#aboutUs" className="hover:text-gray-700">About</Link>
                     <Link to="/services" className="hover:text-gray-700">Services</Link>
                     <Link to="/home#contact" className="hover:text-gray-700">Contact</Link>
