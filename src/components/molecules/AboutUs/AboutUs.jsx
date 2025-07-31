@@ -1,7 +1,7 @@
 import { Card } from "../../atoms/Card/Card"
-import ourVision from "../../../assets/aboutUs/ourVision.webp"
-import ourMission from "../../../assets/aboutUs/ourConstruction.webp"
-import ourValues from "../../../assets/aboutUs/ourValues.webp"
+import ourVision from "../../../assets/aboutUs/ourVision.png"
+import ourMission from "../../../assets/aboutUs/ourMission.png"
+import ourValues from "../../../assets/aboutUs/ourValue.png"
 import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
 
@@ -32,21 +32,22 @@ export const AboutUs = () => {
                     <Card
                     image={ourVision}
                     title="Our Vision"
-                    description="Our vision at Urbanex Space is to become the go-to destination for anyone looking to enhance their home with stylish and affordable. We aim to achieve this by continuing to offer a wide selection of high-quality products and exceptional customer service."
+                    description="Our vision at Urbanex Space is to be the trusted destination for stylish, high-quality, and affordable interior solutions. We aim to create meaningful spaces that inspire, uplift, and reflect every client’s unique personality."
                     />
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
                     <Card
                     image={ourMission}
                     title="Our Mission"
-                    description="We understand that your time is valuable, so we always try to make our customers happy with our work. We also value our workers time and make sure they have the resources they need to complete their tasks efficiently."
+                    description="We’re committed to delivering personalized interior solutions that blend modern aesthetics with timeless appeal. Through thoughtful design and attention to detail, we transform spaces into experiences.
+"
                     />
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
                     <Card
                     image={ourValues}
                     title="Our Values"
-                    description="At Urbanex Space, we believe in providing our customers with the best possible service experience. Our values include integrity, quality, creativity, and innovation, which guide us in everything we do. Contact us to discuss your project!"
+                    description="We value design with integrity blending craftsmanship, collaboration, and conscious choices. Every detail matters, and every space we create is a reflection of our commitment to excellence."
                     />
                 </div>
             </div>

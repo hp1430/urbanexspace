@@ -1,7 +1,7 @@
 import { Card } from "../../atoms/Card/Card"
-import Residential from "../../../assets/cards/residential.jpg"
-import Retail from "../../../assets/cards/retail.jpg"
-import Hospitality from "../../../assets/cards/hospitality.jpg"
+import Residential from "../../../assets/cards/residential.png"
+import Office from "../../../assets/cards/office.png"
+import Hospitality from "../../../assets/cards/hospitality.png"
 
 export const Cards = () => {
     return (
@@ -9,7 +9,7 @@ export const Cards = () => {
             <p
                 className="text-4xl font-thin text-center text-black mt-20 mb-10 max-w-4xl mx-auto"
             >
-                Good design yearns for boundless style that is underlined by simplicity
+                We shape spaces that echo with quiet elegance and bold character
             </p>
 
             <div className="flex items-start justify-center gap-10 overflow-x-auto px-4">
@@ -21,8 +21,8 @@ export const Cards = () => {
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
                     <Card 
-                    image={Retail} 
-                    title="Retail"
+                    image={Office} 
+                    title="Office"
                     />
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
@@ -35,7 +35,7 @@ export const Cards = () => {
             <p
                 className="text-xl font-thin text-center text-black mt-20 mb-10 max-w-lg mx-auto"
             >
-                With over 10 years of experience, Urbanex Space is dedicated to turning your home design ideas into reality. We believe in delivering quality craftsmanship to make your future home dreams come true.
+                At Urbanex Space, we believe that great design should not only be beautiful, but deeply personal, which is why we focus on crafting interiors that feel like an extension of your identity.
             </p>
         </div>
     )
