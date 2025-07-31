@@ -1,6 +1,6 @@
 import { Card } from "../../atoms/Card/Card"
 import ourVision from "../../../assets/aboutUs/ourVision.png"
-import ourMission from "../../../assets/aboutUs/ourConstruction.webp"
+import ourMission from "../../../assets/aboutUs/ourMission.png"
 import ourValues from "../../../assets/aboutUs/ourValue.png"
 import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
@@ -39,7 +39,8 @@ export const AboutUs = () => {
                     <Card
                     image={ourMission}
                     title="Our Mission"
-                    description="We understand that your time is valuable, so we always try to make our customers happy with our work. We also value our workers time and make sure they have the resources they need to complete their tasks efficiently."
+                    description="We’re committed to delivering personalized interior solutions that blend modern aesthetics with timeless appeal. Through thoughtful design and attention to detail, we transform spaces into experiences.
+"
                     />
                 </div>
                 <div className="flex-shrink-0 w-[300px]">
