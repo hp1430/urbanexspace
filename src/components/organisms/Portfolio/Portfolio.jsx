@@ -3,7 +3,7 @@ import Office from "../../../assets/categories/OfficeCover.png"
 import Residential from "../../../assets/categories/ResidentialCover.png"
 import Hospitality from "../../../assets/categories/HospitalityCover.png"
 import FarmhouseCover from "../../../assets/categories/FarmhouseCover.png"
-import { useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { useEffect } from "react"
 
 
@@ -40,6 +40,13 @@ export const Portfolio = () => {
                     smart space planning with luxurious comfort. We focus on making every corner count, from 
                     multi-functional layouts to mood-enhancing lighting and curated finishes.
                     </p>
+                    <Link
+                        to="/portfolio/residential"
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        >
+                        See More
+                    </Link>
                 </div>
             </div>
 
@@ -53,6 +60,13 @@ export const Portfolio = () => {
                     We believe a well-designed office is a catalyst for productivity and inspiration. Our approach to office interiors combines brand identity with employee experience using layout, lighting, color psychology, and material choices to create dynamic environments.
                     From sleek corporate setups to creative studios, our designs support modern workflows while exuding professionalism and innovation.
                     </p>
+                    <Link
+                        to="/portfolio/office"
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        >
+                        See More
+                    </Link>
                 </div>
             </div>
 
@@ -69,6 +83,13 @@ export const Portfolio = () => {
                     inspired accents come together to build immersive environments that delight guests and elevate your brand’s
                     hospitality offering.
                     </p>
+                    <Link
+                        to="/portfolio/hospitality"
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        >
+                        See More
+                    </Link>
                 </div>
             </div>
 
@@ -81,6 +102,13 @@ export const Portfolio = () => {
                     <p className="text-base md:text-lg lg:text-xl font-light text-black leading-relaxed">
                         Our farmhouse designs are rooted in simplicity, grounded in nature, and elevated by elegance. We craft interiors that breathe with airy layouts, raw materials, and cozy textures that reflect the surrounding landscape. Whether it's a weekend escape or a full-time retreat, our farmhouse spaces offer a perfect blend of tranquility and sophistication, where comfort feels organic and style feels effortless.
                     </p>
+                    <Link
+                        to="/portfolio/farmhouse"
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        >
+                        See More
+                    </Link>
                 </div>
             </div>
         </div>
