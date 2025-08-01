@@ -29,7 +29,7 @@ export const Contact = () => {
             <h1
                 className="text-5xl font-semibold text-center mt-10 mb-10 text-gray-800"
             >
-                Reach Us:
+                Contact
             </h1>
             <div
                 className="flex items-start justify-between h-screen bg-cover bg-center"
