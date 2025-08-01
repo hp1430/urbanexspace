@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "eslint-config-prettier": "^10.1.2",
+    "keen-slider": "^6.8.6",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

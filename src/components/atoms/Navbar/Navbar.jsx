@@ -7,14 +7,14 @@ export const Navbar = () => {
             <div className="flex items-center w-full max-w-6xl text-black text-lg font-navbar font-light px-4">
                 {/* Clickable Logo */}
                 <div className="flex-shrink-0">
-                    <Link to="/home">
+                    <Link to="/home#home">
                         <img src={logo} alt="Logo" className="w-36 h-28 object-contain" />
                     </Link>
                 </div>
 
                 {/* Navigation Links aligned right */}
                 <div className="flex ml-10 space-x-8 justify-end flex-grow items-center">
-                    <Link to="/home" className="hover:text-gray-700">Home</Link>
+                    <Link to="/home#home" className="hover:text-gray-700">Home</Link>
                     <Link to="/home#portfolio" className="hover:text-gray-700">Portfolio</Link>
                     <Link to="/home#aboutUs" className="hover:text-gray-700">About</Link>
                     <Link to="/services" className="hover:text-gray-700">Services</Link>
