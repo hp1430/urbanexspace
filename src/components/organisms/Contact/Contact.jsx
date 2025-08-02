@@ -2,76 +2,119 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export const Contact = () => {
+  const location = useLocation();
 
-    function handleClick() {
-        console.log("Button clicked!")
-        const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
-        console.log(phoneNumber)
-        const message = import.meta.env.VITE_WHATSAPP_DEFAULT_MESSAGE;
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
+  useEffect(() => {
+    if (location.hash === "#contact") {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        const navbarHeight = 112;
+        const top = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
     }
+  }, [location]);
 
-    const location = useLocation();
+  function handleClick() {
+    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+    const message = import.meta.env.VITE_WHATSAPP_DEFAULT_MESSAGE;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }
 
-    useEffect(() => {
-        if(location.hash === '#contact') {
-            const id = location.hash.substring(1); // Remove the '#' from the hash
-            const element = document.getElementById(id);
-            if(element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }, [location])
+  return (
+    <div id="contact" className="pt-8 px-4 lg:px-16 pb-16 bg-white text-gray-800">
+      <h1 className="text-5xl font-semibold text-center mb-10 text-balck">
+        Contact
+      </h1>
 
-    return (
-        <div id="contact">
-            <h1
-                className="text-5xl font-semibold text-center mt-5 mb-10 text-gray-800"
-            >
-                Contact
-            </h1>
-            <div
-                className="flex items-start justify-between h-screen bg-cover bg-center"
-            >
-                
-                <div
-                    className="flex flex-col items-center justify-center bg-white ml-36 mt-10"
-                >
-                    <button
-                        className="bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 mb-10"
-                        onClick={handleClick}
-                    >
-                        Chat with us on WhatsApp
-                    </button>
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
+        {/* Left: Contact Info */}
+        <div className="flex flex-col items-center justify-start w-full lg:w-1/2">
+          <button
+            className="bg-red-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-red-600 transition duration-300 mb-8"
+            onClick={handleClick}
+          >
+            Chat with us on WhatsApp
+          </button>
 
-                    <h1
-                        className="text-3xl font-bold text-gray-800 mb-5 "
-                    >
-                        Urbanex Space
-                    </h1>
+          <h2 className="text-3xl font-bold mb-4">Urbanex Space</h2>
 
-                    <p
-                        className="text-lg font-thin text-gray-600 mb-5 max-w-lg text-center"
-                    >
-                        H-221, H-BLOCK AYANAGAR, NEW DELHI – 110047
-                    </p>
+          <p className="text-lg mb-3 text-center leading-relaxed">
+            H-221 BLOCK-H<br />
+            AYANAGAR 110047<br />
+            NEW DELHI, INDIA<br />
+            LANDMARK - NEAR CLC CHURCH
+          </p>
 
-                    <p
-                        className="text-lg font-thin text-gray-600 mb-5 max-w-lg text-center"
-                    >
-                        +91-8750161121 
-                    </p>
-                    <p
-                        className="text-lg font-thin text-gray-600 mb-5 max-w-lg text-center"
-                    >
-                        xyz@gmail.com 
-                    </p>
-                </div>
-                <div>
-                    Map
-                </div>
-            </div>
+          <p className="text-lg mb-1 text-center font-medium">
+            +91-8750161121
+          </p>
+
+          <p className="text-lg mb-1 text-center font-medium">
+            xyz@gmail.com
+          </p>
         </div>
-    )
-}
+
+        {/* Right: Contact Form */}
+        <form className="w-full max-w-lg bg-gray-100 p-6 rounded-lg shadow-md">
+          <div className="mb-4">
+            <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-gray-700 font-semibold mb-1" htmlFor="email">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-gray-700 font-semibold mb-1" htmlFor="phone">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-gray-700 font-semibold mb-1" htmlFor="enquiry">
+              Enquiry
+            </label>
+            <textarea
+              id="enquiry"
+              rows="4"
+              placeholder="Enter your message"
+              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-red-500 text-white font-semibold py-2 rounded-md hover:bg-red-600 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
