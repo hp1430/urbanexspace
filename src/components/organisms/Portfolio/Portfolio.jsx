@@ -23,13 +23,13 @@ export const Portfolio = () => {
     return (
         <div id="portfolio">
             <h1
-                className="text-5xl font-semibold text-center mt-20 mb-10 text-gray-800"
+                className="text-5xl font-semibold text-center mt-10 mb-10 text-gray-800"
             >
                 Portfolio
             </h1>
 
             <Parallax image={Residential} description={'Residential Designs'} />
-            <div className="w-full mt-20 mb-10 px-4 flex justify-center">
+            <div className="w-full mt-10 mb-10 px-4 flex justify-center">
                 <div className="w-full max-w-2xl text-center">
                     <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">
                     Designed for Modern Living, Styled for Timeless Grace.
@@ -43,7 +43,7 @@ export const Portfolio = () => {
                     <Link
                         to="/portfolio/residential"
                         onClick={() => window.scrollTo(0, 0)}
-                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-red-600 to-red-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 hover:scale-105"
                         >
                         See More
                     </Link>
@@ -51,7 +51,7 @@ export const Portfolio = () => {
             </div>
 
             <Parallax image={Office} description={'Office Designs'} />
-            <div className="w-full mt-20 mb-10 px-4 flex justify-center">
+            <div className="w-full mt-10 mb-10 px-4 flex justify-center">
                 <div className="w-full max-w-2xl text-center">
                     <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">
                     Smart & Stylish Workspaces That Energize Performance.
@@ -63,7 +63,7 @@ export const Portfolio = () => {
                     <Link
                         to="/portfolio/office"
                         onClick={() => window.scrollTo(0, 0)}
-                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-red-600 to-red-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 hover:scale-105"
                         >
                         See More
                     </Link>
@@ -71,7 +71,7 @@ export const Portfolio = () => {
             </div>
 
             <Parallax image={Hospitality} description={'Hospitality Designs'} />
-            <div className="w-full mt-20 mb-10 px-4 flex justify-center">
+            <div className="w-full mt-10 mb-10 px-4 flex justify-center">
                 <div className="w-full max-w-2xl text-center">
                     <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">
                     Immersive Luxury Designed to Leave a Lasting Impression.
@@ -86,7 +86,7 @@ export const Portfolio = () => {
                     <Link
                         to="/portfolio/hospitality"
                         onClick={() => window.scrollTo(0, 0)}
-                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-red-600 to-red-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 hover:scale-105"
                         >
                         See More
                     </Link>
@@ -94,7 +94,7 @@ export const Portfolio = () => {
             </div>
 
             <Parallax image={FarmhouseCover} description={'Farmhouse Designs'} />
-            <div className="w-full mt-20 mb-10 px-4 flex justify-center">
+            <div className="w-full mt-10 mb-10 px-4 flex justify-center">
                 <div className="w-full max-w-2xl text-center">
                     <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">
                     Where Nature Embraces Luxury, Effortlessly.
@@ -105,7 +105,7 @@ export const Portfolio = () => {
                     <Link
                         to="/portfolio/farmhouse"
                         onClick={() => window.scrollTo(0, 0)}
-                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+                        className="mt-8 inline-block rounded-full bg-gradient-to-r from-red-600 to-red-500 px-8 py-3 text-white font-semibold shadow-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 hover:scale-105"
                         >
                         See More
                     </Link>
