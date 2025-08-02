@@ -7,6 +7,7 @@ import { Contact } from "../../components/organisms/Contact/Contact"
 import { AboutUs } from "../../components/molecules/AboutUs/AboutUs"
 import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
+import Services from "../../components/molecules/Services/Services"
 
 export const Home = () => {
 
@@ -29,6 +30,7 @@ export const Home = () => {
             <Cards />
             <Portfolio />
             <AboutUs />
+            <Services />
             <Contact />
         </div>
     )

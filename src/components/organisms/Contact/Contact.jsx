@@ -27,7 +27,7 @@ export const Contact = () => {
     return (
         <div id="contact">
             <h1
-                className="text-5xl font-semibold text-center mt-10 mb-10 text-gray-800"
+                className="text-5xl font-semibold text-center mt-5 mb-10 text-gray-800"
             >
                 Contact
             </h1>
