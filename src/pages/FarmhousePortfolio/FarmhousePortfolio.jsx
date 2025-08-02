@@ -1,9 +1,22 @@
 import { Navbar } from "../../components/atoms/Navbar/Navbar"
 import { PortfolioPage } from "../../components/organisms/PortfolioPage/PortfolioPage"
-import residential11 from "../../assets/portfolio/residential/residential11.png"
-import residential12 from "../../assets/portfolio/residential/residential12.png"
-import residential21 from "../../assets/portfolio/residential/residential21.png"
-import residential22 from "../../assets/portfolio/residential/residential22.png"
+import farmhouse11 from "../../assets/portfolio/farmhouse/farmhouse11.png"
+import farmhouse12 from "../../assets/portfolio/farmhouse/farmhouse12.png"
+import farmhouse13 from "../../assets/portfolio/farmhouse/farmhouse13.png"
+import farmhouse14 from "../../assets/portfolio/farmhouse/farmhouse14.png"
+import FarmhouseSlide11 from "../../assets/portfolio/farmhouse/FarmhouseSlide11.png"
+import FarmhouseSlide12 from "../../assets/portfolio/farmhouse/FarmhouseSlide12.png"
+import FarmhouseSlide13 from "../../assets/portfolio/farmhouse/FarmhouseSlide13.png"
+import FarmhouseSlide14 from "../../assets/portfolio/farmhouse/FarmhouseSlide14.png"
+import FarmhouseSlide15 from "../../assets/portfolio/farmhouse/FarmhouseSlide15.png"
+import FarmhouseSlide16 from "../../assets/portfolio/farmhouse/FarmhouseSlide16.png"
+import FarmhouseSlide17 from "../../assets/portfolio/farmhouse/FarmhouseSlide17.png"
+import FarmhouseSlide18 from "../../assets/portfolio/farmhouse/FarmhouseSlide18.png"
+import FarmhouseSlide19 from "../../assets/portfolio/farmhouse/FarmhouseSlide19.png"
+import FarmhouseSlide20 from "../../assets/portfolio/farmhouse/FarmhouseSlide20.png"
+import FarmhouseSlide21 from "../../assets/portfolio/farmhouse/FarmhouseSlide21.png"
+import FarmhouseSlide22 from "../../assets/portfolio/farmhouse/FarmhouseSlide22.png"
+import FarmhouseSlide23 from "../../assets/portfolio/farmhouse/FarmhouseSlide23.png"
 
 export const FarmhousePortfolio = () => {
     return (
@@ -23,16 +36,25 @@ export const FarmhousePortfolio = () => {
 
                 <PortfolioPage
                     cards={[
-                        { image: residential11 },
-                        { image: residential12 },
-                        { image: residential21 },
-                        { image: residential22 },
+                        { image: farmhouse11 },
+                        { image: farmhouse12 },
+                        { image: farmhouse13 },
+                        { image: farmhouse14 },
                     ]}
                     images={[
-                        { image: residential11 },
-                        { image: residential12 },
-                        { image: residential21 },
-                        { image: residential22 },
+                        { image: FarmhouseSlide11 },
+                        { image: FarmhouseSlide12 },
+                        { image: FarmhouseSlide13 },
+                        { image: FarmhouseSlide14 },
+                        { image: FarmhouseSlide15 },
+                        { image: FarmhouseSlide16 },
+                        { image: FarmhouseSlide17 },
+                        { image: FarmhouseSlide18 },
+                        { image: FarmhouseSlide19 },
+                        { image: FarmhouseSlide20 },
+                        { image: FarmhouseSlide21 },
+                        { image: FarmhouseSlide22 },
+                        { image: FarmhouseSlide23 },
                     ]}
                 />
             </div>

@@ -24,7 +24,7 @@ export const AboutUs = () => {
             <h1
                 className="text-5xl font-semibold text-center mt-10 mb-10 text-gray-800"
             >
-                About Us:
+                About
             </h1>
 
             <div className="flex items-start justify-center gap-10 overflow-x-auto px-4 ml-4">

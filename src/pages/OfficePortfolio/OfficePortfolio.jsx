@@ -1,9 +1,18 @@
 import { Navbar } from "../../components/atoms/Navbar/Navbar"
 import { PortfolioPage } from "../../components/organisms/PortfolioPage/PortfolioPage"
-import residential11 from "../../assets/portfolio/residential/residential11.png"
-import residential12 from "../../assets/portfolio/residential/residential12.png"
-import residential21 from "../../assets/portfolio/residential/residential21.png"
-import residential22 from "../../assets/portfolio/residential/residential22.png"
+import office11 from "../../assets/portfolio/office/office11.png"
+import office12 from "../../assets/portfolio/office/office12.png"
+import office21 from "../../assets/portfolio/office/office21.png"
+import office22 from "../../assets/portfolio/office/office22.png"
+import OfficeSlide11 from "../../assets/portfolio/office/OfficeSlide11.png"
+import OfficeSlide12 from "../../assets/portfolio/office/OfficeSlide12.png"
+import OfficeSlide13 from "../../assets/portfolio/office/OfficeSlide13.png"
+import OfficeSlide14 from "../../assets/portfolio/office/OfficeSlide14.png"
+import OfficeSlide15 from "../../assets/portfolio/office/OfficeSlide15.png"
+import OfficeSlide21 from "../../assets/portfolio/office/OfficeSlide21.png"
+import OfficeSlide22 from "../../assets/portfolio/office/OfficeSlide22.png"
+import OfficeSlide23 from "../../assets/portfolio/office/OfficeSlide23.png"
+import OfficeSlide24 from "../../assets/portfolio/office/OfficeSlide24.png"
 
 export const OfficePortfolio = () => {
     return (
@@ -23,16 +32,21 @@ export const OfficePortfolio = () => {
 
                 <PortfolioPage
                     cards={[
-                        { image: residential11 },
-                        { image: residential12 },
-                        { image: residential21 },
-                        { image: residential22 },
+                        { image: office11 },
+                        { image: office12 },
+                        { image: office21 },
+                        { image: office22 },
                     ]}
                     images={[
-                        { image: residential11 },
-                        { image: residential12 },
-                        { image: residential21 },
-                        { image: residential22 },
+                        { image: OfficeSlide11 },
+                        { image: OfficeSlide12 },
+                        { image: OfficeSlide13 },
+                        { image: OfficeSlide14 },
+                        { image: OfficeSlide15 },
+                        { image: OfficeSlide21 },
+                        { image: OfficeSlide22 },
+                        { image: OfficeSlide23 },
+                        { image: OfficeSlide24 },
                     ]}
                 />
             </div>
