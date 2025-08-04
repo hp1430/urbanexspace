@@ -16,7 +16,8 @@ export const Portfolio = () => {
             const id = location.hash.substring(1);
             const element = document.getElementById(id);
             if(element) {
-                element.scrollIntoView({ behavior: "smooth"} );
+                const top = element.offsetTop - 125; // Adjust for navbar height
+                window.scrollTo({ top, behavior: 'smooth' });
             }
         }
     }, [location])

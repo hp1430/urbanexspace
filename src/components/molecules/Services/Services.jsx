@@ -48,7 +48,8 @@ export default function Services() {
             const id = location.hash.substring(1); // Remove the '#' from the hash
             const element = document.getElementById(id);
             if(element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                const top = element.offsetTop - 80; // Adjust for navbar height
+                window.scrollTo({ top, behavior: 'smooth' });
             }
         }
     }, [location])
