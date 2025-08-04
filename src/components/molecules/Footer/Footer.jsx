@@ -23,17 +23,17 @@ export const Footer = () => {
       {/* Right: Social Media Icons */}
       <div className="flex space-x-4 text-white text-xl mr-20">
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-instagram hover:text-gray-400" />
+          <i className="fab fa-instagram text-pink-500 hover:text-gray-400" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook hover:text-gray-400" />
+          <i className="fab fa-facebook text-blue-600 hover:text-gray-400" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-youtube hover:text-gray-400" />
+          <i className="fab fa-youtube text-red-600 hover:text-gray-400" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        {/*<a href="#" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-x hover:text-gray-400" />
-        </a>
+        </a>*/}
       </div>
     </footer>
   );
