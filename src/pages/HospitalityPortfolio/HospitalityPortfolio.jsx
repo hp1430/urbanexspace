@@ -17,6 +17,7 @@ import HospitalitySlide25 from "../../assets/portfolio/hospitality/HospitalitySl
 import HospitalitySlide26 from "../../assets/portfolio/hospitality/HospitalitySlide26.png"
 import HospitalitySlide27 from "../../assets/portfolio/hospitality/HospitalitySlide27.png"
 import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
+import { Footer } from "../../components/molecules/Footer/Footer"
 
 export const HospitalityPortfolio = () => {
     return (
@@ -57,6 +58,7 @@ export const HospitalityPortfolio = () => {
                     ]}
                 />
             </div>
+            <Footer />
             <WhatsappButton />
         </div>
     )

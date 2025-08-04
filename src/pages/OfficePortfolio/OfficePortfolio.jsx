@@ -14,6 +14,7 @@ import OfficeSlide22 from "../../assets/portfolio/office/OfficeSlide22.png"
 import OfficeSlide23 from "../../assets/portfolio/office/OfficeSlide23.png"
 import OfficeSlide24 from "../../assets/portfolio/office/OfficeSlide24.png"
 import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
+import { Footer } from "../../components/molecules/Footer/Footer"
 
 export const OfficePortfolio = () => {
     return (
@@ -51,6 +52,7 @@ export const OfficePortfolio = () => {
                     ]}
                 />
             </div>
+            <Footer />
             <WhatsappButton />
         </div>
     )
