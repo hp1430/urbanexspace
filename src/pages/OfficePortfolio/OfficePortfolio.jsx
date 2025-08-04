@@ -13,6 +13,7 @@ import OfficeSlide21 from "../../assets/portfolio/office/OfficeSlide21.png"
 import OfficeSlide22 from "../../assets/portfolio/office/OfficeSlide22.png"
 import OfficeSlide23 from "../../assets/portfolio/office/OfficeSlide23.png"
 import OfficeSlide24 from "../../assets/portfolio/office/OfficeSlide24.png"
+import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
 
 export const OfficePortfolio = () => {
     return (
@@ -50,6 +51,7 @@ export const OfficePortfolio = () => {
                     ]}
                 />
             </div>
+            <WhatsappButton />
         </div>
     )
 }
