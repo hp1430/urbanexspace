@@ -26,7 +26,7 @@ export const Home = () => {
     return (
         <div className="bg-white m-0 p-0 overflow-hidden" id="home">
             <Navbar />
-            <Parallax image={FirstParallaxImage} description={'TRANSFORM YOUR INTERIOR WITH URBANEX SPACE'} />
+            <Parallax image={FirstParallaxImage} description={'URBANEX SPACE'} />
             <Cards />
             <Portfolio />
             <AboutUs />
