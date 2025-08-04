@@ -17,6 +17,8 @@ import FarmhouseSlide20 from "../../assets/portfolio/farmhouse/FarmhouseSlide20.
 import FarmhouseSlide21 from "../../assets/portfolio/farmhouse/FarmhouseSlide21.png"
 import FarmhouseSlide22 from "../../assets/portfolio/farmhouse/FarmhouseSlide22.png"
 import FarmhouseSlide23 from "../../assets/portfolio/farmhouse/FarmhouseSlide23.png"
+import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
+import { Footer } from "../../components/molecules/Footer/Footer"
 
 export const FarmhousePortfolio = () => {
     return (
@@ -58,6 +60,8 @@ export const FarmhousePortfolio = () => {
                     ]}
                 />
             </div>
+            <Footer />
+            <WhatsappButton />
         </div>
     )
 }

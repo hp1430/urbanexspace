@@ -8,6 +8,8 @@ import { AboutUs } from "../../components/molecules/AboutUs/AboutUs"
 import { useLocation } from "react-router-dom"
 import { useEffect } from "react"
 import Services from "../../components/molecules/Services/Services"
+import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
+import { Footer } from "../../components/molecules/Footer/Footer"
 
 export const Home = () => {
 
@@ -32,6 +34,8 @@ export const Home = () => {
             <AboutUs />
             <Services />
             <Contact />
+            <Footer />
+            <WhatsappButton />
         </div>
     )
 }

@@ -17,6 +17,8 @@ import ResidentialSlide32 from "../../assets/portfolio/residential/ResidentialSl
 import ResidentialSlide33 from "../../assets/portfolio/residential/ResidentialSlide33.png"
 import ResidentialSlide34 from "../../assets/portfolio/residential/ResidentialSlide34.png"
 import ResidentialSlide35 from "../../assets/portfolio/residential/ResidentialSlide35.png"
+import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
+import { Footer } from "../../components/molecules/Footer/Footer"
 
 export const ResidentialPortfolio = () => {
     return (
@@ -58,6 +60,8 @@ export const ResidentialPortfolio = () => {
                     ]}
                 />
             </div>
+            <Footer />
+            <WhatsappButton />
         </div>
     )
 }
