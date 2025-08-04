@@ -10,6 +10,7 @@ import { useEffect } from "react"
 import Services from "../../components/molecules/Services/Services"
 import { WhatsappButton } from "../../components/atoms/WhatsappButton/WhatsappButton"
 import { Footer } from "../../components/molecules/Footer/Footer"
+import Map from "../../components/molecules/Map/Map"
 
 export const Home = () => {
 
@@ -34,6 +35,9 @@ export const Home = () => {
             <AboutUs />
             <Services />
             <Contact />
+            <div className="w-full max-w-5xl px-4 mx-auto mb-10">
+                <Map />
+            </div>
             <Footer />
             <WhatsappButton />
         </div>
