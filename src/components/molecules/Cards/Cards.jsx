@@ -17,7 +17,7 @@ export const Cards = () => {
                 We shape spaces that echo with quiet elegance and bold character
             </p>
 
-            <div className="flex items-start justify-center gap-10 overflow-x-auto px-4">
+            <div className="flex items-start justify-center gap-10 overflow-x-auto px-4 py-4">
                 <div className="flex-shrink-0 w-[300px]">
                     <Card 
                     image={Residential} 

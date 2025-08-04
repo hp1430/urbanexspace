@@ -28,7 +28,7 @@ export const AboutUs = () => {
                 About
             </h1>
 
-            <div className="flex items-start justify-center gap-10 overflow-x-auto px-4 ml-4">
+            <div className="flex items-start justify-center gap-10 overflow-x-auto px-4 py-4 ml-4">
                 <div className="flex-shrink-0 w-[300px]">
                     <Card
                     image={ourVision}
