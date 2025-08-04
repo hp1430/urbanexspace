@@ -24,14 +24,16 @@ export const ResidentialPortfolio = () => {
     return (
         <div>
             <Navbar />
-            <div className="w-full max-w-5xl px-4 mx-auto">
-                <h1 className="text-3xl font-bold text-center my-8 mt-36">Our Residential Projects</h1>
+            <div className="w-full max-w-5xl px-4 sm:px-6 md:px-8 mx-auto">
+                <h1 className="text-3xl sm:text-4xl font-bold text-center my-8 mt-36">
+                    Our Residential Projects
+                </h1>
 
                 <hr className="border-t-1.5 border-gray-300 mb-8" />
-                <h2 className="text-xl font-semibold text-center mb-4">
+                <h2 className="text-xl sm:text-2xl font-semibold text-center mb-4">
                     Elevated Living, Crafted for the Contemporary Soul.
                 </h2>
-                <p className="text-center mb-8">
+                <p className="text-base sm:text-lg text-center mb-8 max-w-3xl mx-auto">
                     We design Residentials that redefine urban sophistication, where every square foot is thoughtfully optimized without compromising on luxury. Blending modern aesthetics with functional comfort, our Residential designs celebrate clean lines, rich textures, and personalized detailing. From ambient lighting to modular solutions, each element is curated to elevate everyday living while echoing your unique style. Whether minimalist or maximalist, the result is always timeless and effortlessly elegant.
                 </p>
                 <hr className="border-t-1.5 border-gray-300 mb-8" />

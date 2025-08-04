@@ -1,19 +1,19 @@
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
-import { useState, useEffect, useRef } from "react"
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { useState, useEffect, useRef } from "react";
 
 export const PortfolioImageSlider = ({ images }) => {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const timerRef = useRef(null)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const timerRef = useRef(null);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     loop: true,
     slideChanged(s) {
-      setCurrentSlide(s.track.details.rel)
+      setCurrentSlide(s.track.details.rel);
     },
     drag: true,
-  })
+  });
 
   const [thumbRef] = useKeenSlider({
     initial: 0,
@@ -21,32 +21,32 @@ export const PortfolioImageSlider = ({ images }) => {
       perView: Math.min(images.length, 5),
       spacing: 12,
     },
-  })
+  });
 
   // Auto-slide interval
   useEffect(() => {
     timerRef.current = setInterval(() => {
       if (instanceRef.current) {
-        instanceRef.current.next()
+        instanceRef.current.next();
       }
-    }, 4000) // change slide every 4 seconds
+    }, 4000); // Change slide every 4 seconds
 
-    return () => clearInterval(timerRef.current)
-  }, [])
+    return () => clearInterval(timerRef.current);
+  }, []);
 
   // Keep thumbnail in sync
   useEffect(() => {
-    thumbRef.current?.moveToIdx(currentSlide)
-  }, [currentSlide])
+    thumbRef.current?.moveToIdx(currentSlide);
+  }, [currentSlide]);
 
-  const goPrev = () => instanceRef.current?.prev()
-  const goNext = () => instanceRef.current?.next()
+  const goPrev = () => instanceRef.current?.prev();
+  const goNext = () => instanceRef.current?.next();
 
   return (
     <div className="w-full flex flex-col items-center gap-4 px-4 mb-10">
       {/* Main Slider with Arrows */}
       <div className="relative w-full max-w-5xl overflow-hidden rounded-lg shadow-md">
-        <div ref={sliderRef} className="keen-slider h-[500px] rounded-lg">
+        <div ref={sliderRef} className="keen-slider h-[500px] md:h-[600px] lg:h-[700px] rounded-lg">
           {images.map((src, index) => (
             <div key={index} className="keen-slider__slide flex justify-center items-center">
               <img
@@ -100,5 +100,5 @@ export const PortfolioImageSlider = ({ images }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
