@@ -31,7 +31,7 @@ export const Home = () => {
       <div className="transition-all duration-300">
         <Navbar />
         <Parallax image={FirstParallaxImage} description={"URBANEX SPACE"} />
-        <div className="px-4 sm:px-8">
+        <div className="md:px-0 sm:px-8">
           <Cards />
           <Portfolio />
           <AboutUs />
