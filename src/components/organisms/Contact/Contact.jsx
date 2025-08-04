@@ -25,34 +25,41 @@ export const Contact = () => {
 
   return (
     <div id="contact" className="pt-8 px-4 lg:px-16 pb-16 bg-white text-gray-800">
-      <h1 className="text-5xl font-semibold text-center mb-10 text-balck">
+      <h1 className="text-4xl sm:text-5xl font-semibold text-center mb-10 text-gray-800">
         Contact
       </h1>
+
+      <h2 className="text-2xl sm:text-3xl text-center mb-6 text-gray-600">
+        Get In Touch With Us
+      </h2>
 
       <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left: Contact Info */}
         <div className="flex flex-col items-center justify-start w-full lg:w-1/2">
           <button
-            className="bg-red-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-red-600 transition duration-300 mb-8"
+            className="bg-red-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-red-600 transition duration-300 mb-8 w-full sm:w-auto"
             onClick={handleClick}
           >
             Chat with us on WhatsApp
           </button>
 
-          <h2 className="text-3xl font-bold mb-4">Urbanex Space</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Urbanex Space</h2>
 
-          <p className="text-lg mb-3 text-center leading-relaxed">
-            H-221 BLOCK-H<br />
-            AYANAGAR 110047<br />
-            NEW DELHI, INDIA<br />
+          <p className="text-lg sm:text-xl mb-3 text-center leading-relaxed">
+            H-221 BLOCK-H
+            <br />
+            AYANAGAR 110047
+            <br />
+            NEW DELHI, INDIA
+            <br />
             LANDMARK - NEAR CLC CHURCH
           </p>
 
-          <p className="text-lg mb-1 text-center font-medium">
+          <p className="text-lg sm:text-xl mb-1 text-center font-medium">
             +91-8750161121
           </p>
 
-          <p className="text-lg mb-1 text-center font-medium">
+          <p className="text-lg sm:text-xl mb-1 text-center font-medium">
             xyz@gmail.com
           </p>
         </div>

@@ -31,35 +31,32 @@ const services = [
 ];
 
 export default function Services() {
+  function handleClick() {
+    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+    const message = import.meta.env.VITE_WHATSAPP_DEFAULT_MESSAGE;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }
 
-    function handleClick() {
-        console.log("Button clicked!")
-        const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
-        console.log(phoneNumber)
-        const message = import.meta.env.VITE_WHATSAPP_DEFAULT_MESSAGE;
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#services") {
+      const id = location.hash.substring(1); // Remove the '#' from the hash
+      const element = document.getElementById(id);
+      if (element) {
+        const top = element.offsetTop - 80; // Adjust for navbar height
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
     }
-
-    const location = useLocation();
-
-    useEffect(() => {
-        if(location.hash === "#services") {
-            const id = location.hash.substring(1); // Remove the '#' from the hash
-            const element = document.getElementById(id);
-            if(element) {
-                const top = element.offsetTop - 80; // Adjust for navbar height
-                window.scrollTo({ top, behavior: 'smooth' });
-            }
-        }
-    }, [location])
+  }, [location]);
 
   return (
     <section className="py-10 bg-white" id='services'>
-      <h1 className="text-5xl font-semibold text-center mt-5 mb-10 text-gray-800">
+      <h1 className="text-4xl sm:text-5xl font-semibold text-center mt-5 mb-10 text-gray-800">
         Services
       </h1>
-      <h2 className="text-3xl text-center mb-6 text-gray-600">
+      <h2 className="text-xl sm:text-3xl text-center mb-6 text-gray-600">
         End to End Interior Solutions
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
@@ -68,13 +65,13 @@ export default function Services() {
             key={index}
             className="flex flex-col items-center justify-center text-center border rounded-lg p-6 shadow hover:shadow-lg transition"
           >
-            <div className="text-red-500">{service.icon}</div>
-            <div className="mt-3 text-base font-medium text-gray-700">{service.title}</div>
+            <div className="text-red-500 mb-4">{service.icon}</div>
+            <div className="mt-3 text-base sm:text-lg font-medium text-gray-700">{service.title}</div>
           </div>
         ))}
       </div>
       <button 
-        className="mt-8 px-6 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition align-center block mx-auto"
+        className="mt-8 px-6 py-3 sm:px-8 sm:py-4 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition align-center block mx-auto"
         onClick={handleClick}
       >
         Book a Free Design Session
