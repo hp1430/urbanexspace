@@ -33,7 +33,7 @@ export const Contact = () => {
         Get In Touch With Us
       </h2>
 
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
+      <div className="flex flex-col lg:flex-row items-start justify-center gap-10">
         {/* Left: Contact Info */}
         <div className="flex flex-col items-center justify-start w-full lg:w-1/2">
           <button
@@ -65,7 +65,7 @@ export const Contact = () => {
         </div>
 
         {/* Right: Contact Form */}
-        <form className="w-full max-w-lg bg-gray-100 p-6 rounded-lg shadow-md">
+        <form className="w-full max-w-lg  bg-gray-100 p-6 rounded-lg shadow-md">
           <div className="mb-4">
             <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
               Name

@@ -1,21 +1,21 @@
-export const Card = ({image, title, description}) => {
+export const Card = ({ image, title, description }) => {
     return (
-        <div>
+        <div className="flex flex-col items-center text-center">
             <div>
                 <img
-                    className="w-80 h-96 object-cover rounded-lg shadow-lg shadow-gray-500/80 hover:scale-105 transition-transform duration-300 ease-in-out"
+                    className="w-72 sm:w-80 h-80 sm:h-96 object-cover rounded-lg shadow-lg shadow-gray-500/80 hover:scale-105 transition-transform duration-300 ease-in-out"
                     src={image}
                     alt="Card Image"
                 />
             </div>
-            <div className="text-center mt-4">
-                <h2 className="text-2xl font-semibold mt-4">{title}</h2>
-                <p
-                    className="text-lg font-thin text-gray-600 mb-5 max-w-lg text-center mt-2"
-                >
-                    {description}
-                </p>
+            <div className="mt-4 px-2">
+                <h2 className="text-xl sm:text-2xl font-semibold">{title}</h2>
+                {description && (
+                    <p className="text-base sm:text-lg font-thin text-gray-600 mt-2 max-w-sm">
+                        {description}
+                    </p>
+                )}
             </div>
         </div>
-    )
-}
+    );
+};
