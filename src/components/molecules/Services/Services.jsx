@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { FaPaintRoller } from 'react-icons/fa6';
+import { GiFloorPolisher, GiSaloonDoors } from 'react-icons/gi';
 import {
   MdKitchen,
   MdOutlineBedroomChild,
@@ -21,13 +23,16 @@ const services = [
   { title: "Storage and Wardrobe", icon: <MdOutlineStorage size={40} /> },
   { title: "Space Saving Furniture", icon: <MdOutlineChair size={40} /> },
   { title: "TV Units", icon: <MdOutlineLiveTv size={40} /> },
-  { title: "Study Tables", icon: <MdOutlineTableBar size={40} /> },
+  { title: "Wall Paint", icon: <FaPaintRoller size={40} /> },
   { title: "False Ceiling", icon: <MdOutlineRoofing size={40} /> },
   { title: "Lights", icon: <MdOutlineLightbulb size={40} /> },
   { title: "Wallpaper", icon: <MdOutlineWallpaper size={40} /> },
   { title: "Bathroom", icon: <MdOutlineBathroom size={40} /> },
   { title: "Pooja Unit", icon: <MdOutlineRoomPreferences size={40} /> },
   { title: "Kids Bedroom", icon: <MdOutlineBedroomChild size={40} /> },
+  { title: "Glass Work and Design", icon: <MdOutlineTableBar size={40} /> },
+  { title: "Foyer Designing", icon: <GiSaloonDoors size={40} /> },
+  { title: "Marble Flooring", icon: <GiFloorPolisher size={40} /> },
 ];
 
 export default function Services() {
