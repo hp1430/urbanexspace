@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <div className="relative">
       {/* Main Navbar */}
-      <div className="flex justify-between items-center text-white p-4 w-full h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-lg fixed top-0 left-0 z-20">
+      <div className="flex justify-center items-center text-white p-4 w-full h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-lg fixed top-0 left-0 z-20">
         <div className="flex items-center w-full max-w-6xl text-black text-lg font-navbar font-light px-4">
           {/* Clickable Logo */}
           <div className="flex-shrink-0">
