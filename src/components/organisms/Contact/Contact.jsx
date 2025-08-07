@@ -65,62 +65,64 @@ export const Contact = () => {
         </div>
 
         {/* Right: Contact Form */}
-        <form className="w-full max-w-lg  bg-gray-100 p-6 rounded-lg shadow-md">
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
-            />
-          </div>
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <form className="w-full max-w-xl bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <div className="mb-4">
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+              />
+            </div>
 
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-1" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
-            />
-          </div>
+            <div className="mb-4">
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+              />
+            </div>
 
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-1" htmlFor="phone">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              placeholder="Enter your phone number"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
-            />
-          </div>
+            <div className="mb-4">
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="phone">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+              />
+            </div>
 
-          <div className="mb-6">
-            <label className="block text-gray-700 font-semibold mb-1" htmlFor="enquiry">
-              Enquiry
-            </label>
-            <textarea
-              id="enquiry"
-              rows="4"
-              placeholder="Enter your message"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
-            ></textarea>
-          </div>
+            <div className="mb-6">
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="enquiry">
+                Enquiry
+              </label>
+              <textarea
+                id="enquiry"
+                rows="4"
+                placeholder="Enter your message"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 bg-white"
+              ></textarea>
+            </div>
 
-          <button
-            type="submit"
-            className="w-full bg-red-500 text-white font-semibold py-2 rounded-md hover:bg-red-600 transition"
-          >
-            Submit
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="w-full bg-red-500 text-white font-semibold py-2 rounded-md hover:bg-red-600 transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
