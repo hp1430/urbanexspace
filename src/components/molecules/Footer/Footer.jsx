@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="bg-black text-white py-6 px-4 flex flex-col md:flex-row items-center justify-between shadow-md">
       
       {/* Left: Copyright */}
-      <div className="text-sm lg:ml-36 mb-4 md:mb-0 text-center md:text-left">
+      <div className="text-sm lg:ml-36 mb-4 md:mb-0 text-center md:ml-32 md:text-left">
         © {new Date().getFullYear()} <span className="font-semibold">URBANEX SPACE</span>
       </div>
 
@@ -22,7 +22,7 @@ export const Footer = () => {
       </div>
 
       {/* Right: Social Media Icons */}
-      <div className="flex space-x-4 lg:mr-36 text-white text-xl justify-center md:justify-end">
+      <div className="flex space-x-4 lg:mr-36 text-white text-xl justify-center md:mr-32">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram text-pink-500 hover:text-gray-400" />
         </a>
