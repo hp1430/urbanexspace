@@ -1,5 +1,5 @@
 import { Card } from "../../atoms/Card/Card";
-import Residential from "../../../assets/cards/residential.png";
+import Residential from "../../../assets/cards/Residential.png";
 import Office from "../../../assets/cards/office.png";
 import Hospitality from "../../../assets/cards/hospitality.png";
 
